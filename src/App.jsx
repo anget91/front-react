@@ -31,9 +31,9 @@ export function App() {
 
 function MainContentWithSidebar({children}) {
   return (
-    <section className='w-full max-h-svh flex'>
+    <section className='w-full max-h-svh flex overflow-hidden'>
       <Sidebar/>
-      <section className='w-full max-h-svh relative'>
+      <section className='w-full max-h-svh relative overflow-hidden'>
         {children}
       </section>
     </section>
